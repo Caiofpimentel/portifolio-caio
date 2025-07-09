@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Mim</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 60px; /* empurra o conteúdo para baixo */
+            margin: 0;
+        }
+
+        .foto-perfil {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .texto-sobre {
+            max-width: 600px;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .botao-crud {
+            background-color: #1f1f1f;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: 1px solid #ffffff55;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .botao-crud:hover {
+            background-color: #ffffff22;
+        }
+    </style>
+</head>
+<body>
+
+<img src="/imagens/minha-foto.jpg" alt="Minha Foto" class="foto-perfil">
+
+<div class="texto-sobre">
+    <p>
+        Olá! Meu nome é Caio Pimentel e sou um desenvolvedor apaixonado por tecnologia. <br>
+        Aqui você pode contar sua história profissional, suas experiências com Java, Spring Boot,<br>
+        projetos pessoais, o que você está estudando, suas metas e muito mais!
+    </p>
+</div>
+
+<a th:href="@{/crud}" class="botao-crud">Ir para o CRUD</a>
+
+</body>
+</html>
