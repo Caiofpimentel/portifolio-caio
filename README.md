@@ -70,7 +70,7 @@ Acesse `http://localhost:8080` para explorar a API e suas páginas.
 
 ✅ Em desenvolvimento contínuo.
 - Planejo migrar o banco de dados para **MySQL** e futuramente integrar com um **frontend em React**.
-- Planejo trazer o front-end da aplicação para React ou Angular.
+
 ---
 
 ## 📬 Contato
