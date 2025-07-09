@@ -15,4 +15,9 @@ public class ControllerUi {
         return "index";
     }
 
+    @GetMapping("/crud")
+    public String crud(){
+        return "crud";
+    }
+
 }
